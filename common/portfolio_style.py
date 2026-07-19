@@ -53,7 +53,20 @@ ACCENT_COLORS = [
 
 
 def apply_mpl_style() -> None:
-    """Apply the portfolio matplotlib style globally."""
+    """Apply the portfolio matplotlib style globally.
+
+    In Jupyter / nbconvert, enable the inline backend so ``plt.show()``
+    embeds PNG outputs in the notebook (needed for GitHub CI execution).
+    """
+    try:
+        from IPython import get_ipython
+
+        ip = get_ipython()
+        if ip is not None:
+            ip.run_line_magic("matplotlib", "inline")
+    except Exception:
+        pass
+
     plt.rcParams.update(
         {
             "figure.facecolor": "white",

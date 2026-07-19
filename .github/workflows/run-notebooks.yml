@@ -27,13 +27,13 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -47,10 +47,12 @@ jobs:
           done
 
       - name: Execute project notebooks
-        env:
-          MPLBACKEND: Agg
         run: |
           set -euo pipefail
+
+          # Do not set MPLBACKEND=Agg here — it prevents figures from being
+          # embedded as image/png outputs in the executed notebooks.
+          # Jupyter's inline backend captures plt.show() into cell outputs.
 
           # Add new project notebooks here as the portfolio grows.
           NOTEBOOKS=(
