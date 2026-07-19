@@ -14,9 +14,7 @@ Given 28×28 grayscale pixels (784 features), predict whether an image shows a c
 
 | File | Role |
 |------|------|
-| [`data/raw/train.csv`](data/raw/train.csv) | Labeled training data (`label` + 784 pixels) |
-| [`data/raw/evaluate.csv`](data/raw/evaluate.csv) | Unlabeled evaluation set (`ID` + 784 pixels) |
-| [`results/results.csv`](results/results.csv) | Predictions for the evaluation set |
+| [`data/raw/train.csv`](data/raw/train.csv) | Labeled images (`label` + 784 pixels), split into train / validation / test |
 
 Source: [Fashion-MNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist) subset (coat / dress).
 
@@ -28,7 +26,6 @@ Source: [Fashion-MNIST](https://www.kaggle.com/datasets/zalando-research/fashion
 2. Baseline models: **SVM**, **Gaussian Naive Bayes**, **LDA**  
 3. Dimensionality reduction: **PCA** and **LLE**, jointly tuned with model hyperparameters  
 4. Select the best pipeline on validation accuracy; report once on the held-out test set  
-5. Score `evaluate.csv` → `results/results.csv`
 
 <img src="reports/figures/14_model_comparison.png" alt="Validation accuracy comparison across models" width="720" />
 
@@ -71,8 +68,6 @@ fashion-coat-dress-classification/
 ├── notebooks/
 │   └── fashion_coat_dress_classification.ipynb
 ├── data/raw/
-│   ├── train.csv
-│   └── evaluate.csv
-├── reports/figures/
-└── results/results.csv
+│   └── train.csv
+└── reports/figures/
 ```
