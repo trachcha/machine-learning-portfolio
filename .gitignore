@@ -25,6 +25,8 @@ ENV/
 **/data/interim/*
 !**/data/**/.gitkeep
 !**/data/**/README.md
+# Allow committing portfolio CSVs that ship with projects
+!**/data/raw/*.csv
 
 # Models & artifacts
 **/models/*.pkl
