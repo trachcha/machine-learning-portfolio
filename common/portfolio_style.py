@@ -4,7 +4,7 @@ Import this module from notebooks instead of hardcoding colors:
 
     import sys
     from pathlib import Path
-    sys.path.insert(0, str(Path("../..").resolve()))  # repo root from notebooks/
+    sys.path.insert(0, str(Path("../../..").resolve()))  # repo root from notebooks/
 
     from common.portfolio_style import PALETTE, CLASS_COLORS, apply_mpl_style
     apply_mpl_style()
