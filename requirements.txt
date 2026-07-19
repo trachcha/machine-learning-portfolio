@@ -1,0 +1,11 @@
+# Shared baseline for exploring projects locally.
+# Prefer each project's own requirements.txt when you run that project.
+
+jupyterlab>=4.0
+notebook>=7.0
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+scipy>=1.11
