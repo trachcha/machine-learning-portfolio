@@ -9,6 +9,7 @@ Each project lives under [`projects/`](projects/) as a self-contained Python / J
 | Project | Topic | Status |
 |---------|-------|--------|
 | [Fashion Coat vs Dress Classification](projects/fashion-coat-dress-classification/) | Binary image classification + PCA/LLE | Complete |
+| [Titanic Survival Classification](projects/titanic-survival-classification/) | Tabular binary classification (Decision Tree, KNN) | Complete |
 
 ## Stack
 
@@ -56,7 +57,8 @@ machine-learning-portfolio/
 ├── projects/
 │   ├── README.md
 │   ├── _template/              # starter layout for new projects
-│   └── fashion-coat-dress-classification/
+│   ├── fashion-coat-dress-classification/
+│   └── titanic-survival-classification/
 └── ...
 ```
 
