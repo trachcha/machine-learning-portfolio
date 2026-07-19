@@ -40,6 +40,12 @@ Open any notebook under `projects/<project-name>/notebooks/` and choose the **Py
 
 The `.venv` folder is gitignored — recreate it on each machine with the commands above.
 
+## Continuous integration
+
+A GitHub Actions workflow re-executes project notebooks on pushes to `main` when notebooks, data, shared style, or requirements change (and can also be run manually). Successful runs commit updated notebook outputs and figures back to the repository.
+
+The fashion classification notebook includes full hyperparameter sweeps, so the first CI run can take a long time.
+
 ## Repository layout
 
 ```
