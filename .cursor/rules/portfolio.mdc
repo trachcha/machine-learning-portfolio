@@ -1,0 +1,41 @@
+---
+description: ML portfolio brand, tone, and git attribution rules
+alwaysApply: true
+---
+
+# Machine Learning Portfolio Rules
+
+## Brand palette
+
+Use `common/portfolio_style.py` for all plots. Do not invent new brand colors.
+
+| Name | Hex |
+|------|-----|
+| Light Blue | `#8fd7d7` |
+| Med Blue | `#00b0be` |
+| Light Pink | `#ff8ca1` |
+| Med Pink | `#f45f74` |
+| Light Green | `#bdd373` |
+| Med Green | `#98c127` |
+| Light Orange | `#ffcd8e` |
+| Med Orange | `#ffb255` |
+
+Chart defaults: class 0 / primary → Med Blue; class 1 / secondary → Med Pink; best-model highlight → Med Blue; fills/heatmaps → light variants; extra series → Med Green / Med Orange. Neutrals for text/axes only.
+
+## Public presentation (recruiter-facing)
+
+- Public READMEs and notebook narrative must read as professional portfolio work.
+- Never mention courses, homework, assignments, school deadlines, or converting school projects in committed docs or notebooks.
+- Prefer clear problem → method → results framing.
+
+## Private project hygiene (do not put in public READMEs)
+
+- Use descriptive kebab-case folder names (e.g. `fashion-coat-dress-classification`).
+- Avoid course codes or assignment numbers in public folder names and titles.
+- Keep large raw datasets out of git unless they are small enough to ship with the project.
+
+## Git attribution
+
+- Author and committer: `Chaya Trachová <chaya.trachova@gmail.com>`
+- Never credit Cursor as author/committer/co-author.
+- Do not leave `Co-authored-by` trailers in commit messages.

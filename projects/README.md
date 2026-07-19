@@ -8,20 +8,19 @@ Each folder under `projects/` is a standalone machine learning project.
 |--------|---------|
 | [`fashion-coat-dress-classification/`](fashion-coat-dress-classification/) | Coat vs dress binary classification with SVM / Naive Bayes / LDA and PCA / LLE |
 
-## How to add a project
+## Adding a project
 
 1. Copy `projects/_template/` to a new folder, e.g. `projects/customer-churn-prediction/`.
-2. Rename and fill in that project's `README.md` (problem, approach, results, how to run).
+2. Fill in that project's `README.md` (problem, approach, results, how to run).
 3. Put notebooks in `notebooks/` and reusable code in `src/`.
-4. Keep large datasets out of git unless they are small enough to ship with the project — document how to obtain them otherwise.
-5. Add a short entry for the project in the root [README](../README.md).
+4. Use the shared plot style from [`common/portfolio_style.py`](../common/portfolio_style.py).
+5. Document data sources; keep large datasets out of git unless they ship with the project.
+6. List the project in the root [README](../README.md).
 
-## Suggested naming
+## Naming
 
-Use short, descriptive kebab-case names that sound like product/problem titles:
+Prefer short, descriptive kebab-case names:
 
 - `house-price-regression`
 - `image-classifier-cnn`
 - `nlp-sentiment-analysis`
-
-Avoid course codes or assignment numbers in folder names.

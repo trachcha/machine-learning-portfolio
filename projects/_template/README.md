@@ -25,14 +25,15 @@ Summarize the main findings (table or bullet points). Link to key figures in `re
 ## How to run
 
 ```bash
-cd projects/<project-folder>
+# from the repository root
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+pip install -r projects/<project-folder>/requirements.txt
 jupyter lab
 ```
 
-Open the notebooks under `notebooks/` in order (if numbered).
+Open the notebooks under `notebooks/` in order (if numbered). Charts should use the shared style in `common/portfolio_style.py`.
 
 ## Project layout
 
@@ -50,9 +51,9 @@ Open the notebooks under `notebooks/` in order (if numbered).
     └── figures/        # charts worth showing in the README
 ```
 
-## Status
+## Checklist
 
-- [ ] Problem framed for a portfolio audience
+- [ ] Problem and results clearly documented
 - [ ] Notebook cleaned and runnable end-to-end
-- [ ] Results documented
+- [ ] Plots use `common/portfolio_style.py`
 - [ ] Requirements pinned enough to reproduce

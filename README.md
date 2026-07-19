@@ -1,8 +1,8 @@
 # Machine Learning Portfolio
 
-Portfolio of machine learning projects by **Chaya Trachová**.
+Machine learning projects by **Chaya Trachová**.
 
-Each project lives in its own folder under [`projects/`](projects/), written in Python with Jupyter notebooks, and framed as an independent piece of work — problem, approach, results, and how to reproduce it.
+Each project lives under [`projects/`](projects/) as a self-contained Python / Jupyter notebook study — problem framing, methods, results, and how to reproduce them.
 
 ## Projects
 
@@ -10,17 +10,16 @@ Each project lives in its own folder under [`projects/`](projects/), written in 
 |---------|-------|--------|
 | [Fashion Coat vs Dress Classification](projects/fashion-coat-dress-classification/) | Binary image classification + PCA/LLE | Complete |
 
-Copy [`projects/_template/`](projects/_template/) when you add a new project, then list it in the table above.
-
 ## Stack
 
 - Python 3.10+
 - Jupyter Lab / Notebook
 - NumPy, pandas, scikit-learn, matplotlib, seaborn
 
+Shared plotting style: [`common/portfolio_style.py`](common/portfolio_style.py).  
 Per-project dependencies live in that project's `requirements.txt`. A shared baseline is in the root [`requirements.txt`](requirements.txt).
 
-## Setup (virtual environment)
+## Setup
 
 ```bash
 git clone https://github.com/trachcha/machine-learning-portfolio.git
@@ -37,20 +36,20 @@ python -m ipykernel install --user --name=ml-portfolio --display-name="Python 3 
 jupyter lab
 ```
 
-Then open any notebook under `projects/<project-name>/notebooks/` and choose the **Python 3 (.venv)** kernel.
+Open any notebook under `projects/<project-name>/notebooks/` and choose the **Python 3 (.venv)** kernel.
 
 The `.venv` folder is gitignored — recreate it on each machine with the commands above.
 
-## Project structure
+## Repository layout
 
 ```
 machine-learning-portfolio/
 ├── README.md
 ├── requirements.txt
-├── .venv/                      # local only (not committed)
+├── common/                     # shared style & utilities
 ├── projects/
 │   ├── README.md
-│   ├── _template/              # starter layout for new work
+│   ├── _template/              # starter layout for new projects
 │   └── fashion-coat-dress-classification/
 └── ...
 ```
