@@ -7,6 +7,7 @@ Each folder under `projects/` is a standalone machine learning project.
 | Folder | Summary |
 |--------|---------|
 | [`fashion-coat-dress-classification/`](fashion-coat-dress-classification/) | Coat vs dress binary classification with SVM / Naive Bayes / LDA and PCA / LLE |
+| [`titanic-survival-classification/`](titanic-survival-classification/) | Passenger survival prediction with Decision Tree and KNN |
 
 ## Adding a project
 

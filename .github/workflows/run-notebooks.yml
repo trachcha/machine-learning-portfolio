@@ -55,6 +55,7 @@ jobs:
           # Add new project notebooks here as the portfolio grows.
           NOTEBOOKS=(
             "projects/fashion-coat-dress-classification/notebooks/fashion_coat_dress_classification.ipynb"
+            "projects/titanic-survival-classification/notebooks/titanic_survival_classification.ipynb"
           )
 
           for nb in "${NOTEBOOKS[@]}"; do
