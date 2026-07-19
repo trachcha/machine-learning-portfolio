@@ -1,0 +1,62 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Data (keep structure, exclude large/local files)
+**/data/raw/*
+**/data/processed/*
+**/data/interim/*
+!**/data/**/.gitkeep
+!**/data/**/README.md
+
+# Models & artifacts
+**/models/*.pkl
+**/models/*.joblib
+**/models/*.h5
+**/models/*.pt
+**/models/*.onnx
+!**/models/.gitkeep
+!**/models/README.md
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Coverage / test / tooling
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Misc
+*.log
+tmp/
+temp/
