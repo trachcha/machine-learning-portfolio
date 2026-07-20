@@ -58,6 +58,7 @@ jobs:
           NOTEBOOKS=(
             "projects/fashion-coat-dress-classification/notebooks/fashion_coat_dress_classification.ipynb"
             "projects/titanic-survival-classification/notebooks/titanic_survival_classification.ipynb"
+            "projects/life-expectancy-regression/notebooks/life_expectancy_regression.ipynb"
           )
 
           for nb in "${NOTEBOOKS[@]}"; do
